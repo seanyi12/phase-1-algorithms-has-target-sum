@@ -1,6 +1,15 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+  // Write your algorithm here [3, 8, 12, 4, 11, 7]
+  for(let i=0; i < array.length; i++){
+    for(let j= i+1; j < array.length; j++){
+      if(array[i] + array[j] === target){
+        return true
+      } 
+      }
+    }
+    return false
+  }
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -9,7 +18,9 @@ function hasTargetSum(array, target) {
 /* 
   Add your pseudocode here
 */
-
+  //iterate through two different arrays
+  //add found values [i+j]=target
+  
 /*
   Add written explanation of your solution here
 */
